@@ -1,0 +1,4 @@
+# installs otree via other text file
+-r requirements_base.txt
+psycopg2>=2.8.4
+pandas

@@ -1,0 +1,19 @@
+{{ block title }}
+End of Task 1
+{{ endblock }}
+
+{{ block content }}
+    <head>
+        <link rel="stylesheet" type="text/css" href="{{ static 'styles.css'}}">
+    </head>
+
+<!-- Text -->
+
+<p>
+That concludes Task 1. You successfully identified the transcript with the higher score on the economics quiz in {{ correct }} out of 3 cases. You earned {{ participant.payoff }}.
+</p>
+
+{{ next_button }}
+<!-- Include JavaScript file -->
+
+{{ endblock }}

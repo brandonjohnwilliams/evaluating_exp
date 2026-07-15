@@ -1,0 +1,39 @@
+{{ block title }}Comprehension Check 2{{ endblock }}
+
+{{ block content }}
+
+<p class="mb-4">Please answer the following question to confirm you understand the task.
+You will earn $1 if you correctly answer the comprehension check on your first try. </p>
+
+
+    <div class="card-body">
+        <p><strong>What are you asked to do in Evaluation Task 2?</strong></p>
+        {% for value, label in choices1 %}
+        <div class="form-check">
+            <input
+                class="form-check-input"
+                type="radio"
+                name="comprehension_q1"
+                id="choice1_{{ value }}"
+                value="{{ value }}"
+                {% if selected1 == value %}checked{% endif %}
+            >
+            <label class="form-check-label" for="choice1_{{ value }}">
+                {{ label }}
+            </label>
+        </div>
+        {% endfor %}
+        {% if form.comprehension_q1.errors %}
+            <div class="text-danger mt-2">{{ form.comprehension_q1.errors }}</div>
+        {% endif %}
+    </div>
+
+
+
+<div style="text-align: right;">
+
+        <button class="otree-btn-next btn btn-primary">Next</button>
+
+</div>
+
+{{ endblock }}

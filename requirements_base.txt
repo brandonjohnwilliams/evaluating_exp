@@ -1,0 +1,5 @@
+# fix otree version
+# want oTree < 6 because it avoids annoying "powered by otree"
+
+otree==5.10.4
+

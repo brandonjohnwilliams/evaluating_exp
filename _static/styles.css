@@ -1,0 +1,255 @@
+
+.transcript-container {
+    display: flex;
+    gap: 50px;                  /* tighter gap, adjust to taste */
+    justify-content: center;   /* centers the boxes on the page */
+}
+    .transcript {
+        background: white;
+        padding: 15px;
+        border-radius: 10px;
+        border: 1px solid white;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        width: 250px;
+        text-align: left;
+    }
+    .transcript h2 {
+        margin: 0;
+        color: #333;
+    }
+    .gpa {
+        font-size: 18px;
+        /*font-weight: bold;*/
+        margin: 10px 0;
+        /*color: black;*/
+    }
+    .course-list {
+        list-style-type: none;
+        padding: 0;
+    }
+.course-list li {
+    display: grid;
+    grid-template-columns: 120px 1fr 50px;
+    gap: 10px;
+    align-items: baseline;
+    padding: 5px 0;
+    border-bottom: 1px solid #ddd;
+}
+
+
+  .row {
+    display: flex;
+    gap: 30px;
+    margin: 20px 0;
+  }
+
+  .column {
+    flex: 1;
+  }
+
+  ul {
+    list-style-type: none;
+    padding: 0;
+  }
+
+  li {
+    display: grid;
+    grid-template-columns: 120px 1fr 50px; /* Define columns for number, course, and grade */
+    gap: 10px; /* Space between columns */
+    align-items: baseline; /* Align text properly */
+  }
+
+  .coursenumber {
+    text-align: left; /* Align numbers to the right */
+  }
+
+  .course {
+    text-align: left;
+    width: 80%;
+  }
+
+  .grade {
+    text-align: left;
+      margin-left: 60px;
+  }
+
+.transcript-option {
+    display: block;
+    cursor: pointer;
+    /* remove flex: 1 */
+}
+
+/* Hide the radio input */
+.transcript-option input[type="radio"] {
+    display: none;
+}
+
+/* Highlight the selected transcript */
+.transcript-option input[type="radio"]:checked + .transcript {
+    border: 1px solid #007bff;
+    background-color: #f0f8ff;
+    box-shadow: 0 0 12px rgba(0, 123, 255, 0.3);
+}
+
+.transcript-option:hover .transcript {
+  background-color: #f9f9f9;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  /*transform: scale(1.01);*/
+  transition: all 0.3s ease;
+  border-radius: 10px;
+}
+
+.otree-timer {
+    display: none;
+}
+
+.parent-container {
+  display: flex;
+  justify-content: center; /* Centers horizontally */
+    width: 75%;
+}
+
+.centered-div {
+  /* Add other styles like width, background, etc. */
+  width: 50%;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+  img {
+    width: 100%;
+    height: auto; /* Ensures the aspect ratio is maintained */
+  }
+
+
+.otree-timer {
+    display: none;
+}
+
+.center-text {
+  text-align: center;
+  display: block;
+  margin: 0 auto;
+}
+
+
+.choice-buttons {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+}
+
+.choice-btn {
+    padding: 10px 18px;
+    border: 2px solid #007bff;
+    border-radius: 6px;
+    cursor: pointer;
+    background-color: white;
+    color: #000000;
+    font-weight: 500;
+    user-select: none;
+    transition: all 0.15s ease;
+}
+
+/* Hide the radio input */
+.choice-btn input[type="radio"] {
+    display: none;
+}
+
+/* Hover effect */
+.choice-btn:hover {
+    background-color: #eaf2ff;
+}
+
+/* Selected state */
+.choice-btn input[type="radio"]:checked + * {
+    /* this line does nothing; selection handled below */
+}
+
+/* Use :has() if supported (modern browsers) */
+.choice-btn:has(input[type="radio"]:checked) {
+    background-color: #007bff;
+    color: white;
+}
+
+.likert-table {
+    width: 100%;
+    table-layout: fixed;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+
+.likert-table td {
+    text-align: center;
+    vertical-align: middle;
+    padding: 8px;
+    font-size: 14px;
+}
+
+.likert-labels td {
+    font-weight: 600;
+    font-size: 13px;
+}
+
+.likert-options td input[type="radio"] {
+    transform: scale(1.2);
+}
+
+.likert-labels {
+    border-bottom: 1px solid #ccc;
+}
+
+
+.slider-container {
+    width: 90%;
+    max-width: none;
+    margin: 30px auto 10px auto;
+}
+
+.slider-labels {
+    display: flex;
+    justify-content: space-between;
+    font-size: 13px;
+    color: #555;
+    margin-bottom: 6px;
+}
+
+input[type="range"] {
+    width: 100%;
+    margin: 0;
+}
+
+/* WebKit (Chrome, Safari) */
+input[type="range"]::-webkit-slider-runnable-track {
+    height: 6px;
+    background: #ddd;
+    border-radius: 3px;
+}
+input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 18px;
+    height: 18px;
+    background: #007bff;
+    border-radius: 50%;
+    cursor: pointer;
+    margin-top: -6px;
+}
+
+/* Firefox */
+input[type="range"]::-moz-range-track {
+    height: 6px;
+    background: #ddd;
+    border-radius: 3px;
+}
+input[type="range"]::-moz-range-thumb {
+    width: 18px;
+    height: 18px;
+    background: #007bff;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+
+
+

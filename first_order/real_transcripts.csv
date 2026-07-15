@@ -1,0 +1,11 @@
+﻿id,first_name,gpa,spread,number1,course1,grade1,number2,course2,grade2,number3,course3,grade3,number4,course4,grade4,quiz
+49438,Lena,3.94,0.25,COMMRC 0500,Argument,A,ECON 0100,Intro Microeconomic Theory,A-,ECON 0110,Intro Macroeconomic Theory,A,LCJS 1540,White Collar Crime,A,13
+57395,Riley,3.56,1,ECON 0110,Intro Macroeconomic Theory,A,GEOL 0870,The Planets,B+,Math 0220,Analytc Geometry & Calculus 1,B,PSY 0010,Introduction to Psychology,A,14
+93725,Graham,3.56,1,CHEM 0100,Intro to General Chemistry,A,ECON 0100,Intro Microeconomic Theory,B,Math 0220,Analytc Geometry & Calculus 1,B+,MUSIC 0311,Introduction to World Music,A,12
+59349,Alina,3.56,0.75,ECON 0110,Intro Macroeconomic Theory,A-,Math 0220,Analytc Geometry & Calculus 1,B+,PS 0500,International Relations,A,RUSS 0090,Russian Fairy Tales,B+,13
+68377,Cecilia,4,0,CHIN 0001,First Year Chinese 1,A,ECON 1100,Intermediate Microeconomics,A,ECON 1110,Intermediate Macroeconomics,A,PHIL 0080,Intro to Philosophical Problems,A,17
+99277,Noah,3.5,1,BIOSC 0150,Foundations of Biology 1,B,CHEM 0110,General Chemistry 1,B,ECON 0110,Intro Microeconomic Theory,A,SPAN 0004,Intermediate Spanish 4,A,13
+94864,Daniel,3.86,0.25,ECON 0100,Intro Microeconomic Theory,A,FMST 0120,Introduction to Film,A,GEOL 0870,The Planets,A-,MATH 0220,Analytc Geometry & Calculus 1,A-,13
+8162,Tim,3.81,0.75,ASTRON 0088,Stonehenge to Hubble,A,ECON 0150,Economic Data Analysis,A,MATH 0230,Analytc Geometry & Calculus 2,B+,PSY 0010,Introduction to Psychology,A,13
+78206,Bailey,4,0,BUSBIS 0100,Programming Essentials for Bus,A-,ECON 0100,Intro Microeconomic Theory,A,Math 0220,Analytc Geometry & Calculus 1,A,SPAN 0101,Elementary Spanish 1,A,13
+92331,James,3.94,0.25,COMMRC 0320,Mass Communication & Society,A-,ECON 0100,Intro Microeconomic Theory,A,HIST 0101,Western Civilization 2,A,PHIL 0350,Philosophy and Public Issues,A,15

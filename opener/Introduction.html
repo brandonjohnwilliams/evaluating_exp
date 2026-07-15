@@ -1,0 +1,35 @@
+{{ block title }}
+URL Opener
+{{ endblock }}
+
+{{ block content }}
+<head>
+    <title>Open Multiple Tabs</title>
+</head>
+<body>
+    <label for="urlInput">Enter URL:</label>
+    <input type="text" id="urlInput" placeholder="https://example.com" size="40"><br><br>
+
+    <label for="numTabs">Number of tabs to open:</label>
+    <input type="number" id="numTabs" min="1" value="3"><br><br>
+
+    <button onclick="openTabs()" type="button">Open Tabs</button>
+
+    <script>
+    function openTabs() {
+        const url = document.getElementById("urlInput").value.trim();
+        const numTabs = parseInt(document.getElementById("numTabs").value, 10);
+
+        if (!url) {
+            alert("Please enter a valid URL.");
+            return;
+        }
+
+        for (let i = 0; i < numTabs; i++) {
+            window.open(url, "_blank");
+        }
+    }
+    </script>
+</body>
+{{ endblock }}
+

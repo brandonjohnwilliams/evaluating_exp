@@ -1,0 +1,80 @@
+
+
+{% block content %}
+    <br>
+    <h3> Survey </h3>
+
+<br>
+<br>
+<div class="wrapper">
+    {{ formfield player.age }}
+    {{ formfield player.gender }}
+        <p>What race or ethnicity do you most closely identify with? (You may select more than one)</p>
+<div class="race-row">
+  <label><input type="checkbox" class="race-cb" value="Asian"> Asian</label>
+  <label><input type="checkbox" class="race-cb" value="Black"> Black</label>
+  <label><input type="checkbox" class="race-cb" value="Hispanic"> Hispanic</label>
+  <label><input type="checkbox" class="race-cb" value="White"> White</label>
+  <label><input type="checkbox" class="race-cb" value="Other"> Other</label>
+</div>
+
+<input type="hidden" name="race_raw" id="race_raw" value="">
+    {{ formfield player.year }}
+    {{ formfield player.english }}
+    {{ formfield player.major }}
+    {{ formfield player.secondmajor }}
+    {{ formfield player.gpa }}
+
+</div>
+
+<p></p>
+
+<div style="text-align: right;">
+{{ next_button }}
+</div>
+{% endblock %}
+
+
+{% block styles %}
+
+<style type="text/css">
+
+    div.wrapper {
+        border-style: none;
+        text-align: left;
+        width: 100%;
+        margin: auto;
+        padding: 10px 75px 10px;
+         top: 0;
+    }
+
+      .race-row label{
+    display: inline-block;
+    margin-right: 18px;
+    margin-bottom: 8px;
+    white-space: nowrap;
+  }
+
+</style>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+
+  function syncRace() {
+    const vals = Array.from(document.querySelectorAll(".race-cb:checked"))
+      .map(el => el.value);
+    document.getElementById("race_raw").value = vals.join(",");
+    // console.log("race_raw =", document.getElementById("race_raw").value);
+  }
+
+  document.querySelectorAll(".race-cb").forEach(cb => {
+    cb.addEventListener("change", syncRace);
+  });
+
+  // run once in case you prefill later
+  syncRace();
+
+});
+</script>
+
+{% endblock %}

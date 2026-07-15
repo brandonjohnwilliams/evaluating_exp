@@ -1,0 +1,159 @@
+{{ block title }}
+Evaluation Task 1
+    <head>
+        <link rel="stylesheet" type="text/css" href="{{ static 'styles.css'}}">
+    </head>
+
+<div style="text-align: right; margin-top: -30px; margin-bottom: 30px; font-size: small; z-index: 10;">
+<p>Time left to submit: <strong><span id="time-left"></span></strong></p>
+    <p>Round {{ player.round_number }}</p>
+</div>
+{{ endblock }}
+
+{{ block content }}
+
+<!-- Text -->
+
+
+<p>
+    Below are two student profiles.
+    Please select the student you think performed better on the multiple-choice economics quiz.
+    You will earn $10 if this round is selected to count for payment and if you selected the student with the highest number of correct answers.
+</p>
+
+  <div class="transcript-container">
+
+    <!-- Option 1 -->
+    <label class="transcript-option">
+      <input type="radio" name="selected_transcript" value="1" required>
+      <div class="transcript">
+        <h2>{{ name1 }}</h2>
+<!--        <p class="gpa">GPA: {{ gpa1 }}</p>-->
+        <ul class="course-list">
+          <li><span class="course">Course 1</span><span class="grade">{{ gpa1grade1 }}</span></li>
+          <li><span class="course">Course 2</span><span class="grade">{{ gpa1grade2 }}</span></li>
+          <li><span class="course">Course 3</span><span class="grade">{{ gpa1grade3 }}</span></li>
+          <li><span class="course">Course 4</span><span class="grade">{{ gpa1grade4 }}</span></li>
+        </ul>
+      </div>
+    </label>
+
+    <!-- Option 2 -->
+    <label class="transcript-option">
+      <input type="radio" name="selected_transcript" value="2" required>
+      <div class="transcript">
+        <h2>{{ name2 }}</h2>
+<!--        <p class="gpa">GPA: {{ gpa2 }}</p>-->
+        <ul class="course-list">
+          <li><span class="course">Course 1</span><span class="grade">{{ gpa2grade1 }}</span></li>
+          <li><span class="course">Course 2</span><span class="grade">{{ gpa2grade2 }}</span></li>
+          <li><span class="course">Course 3</span><span class="grade">{{ gpa2grade3 }}</span></li>
+          <li><span class="course">Course 4</span><span class="grade">{{ gpa2grade4 }}</span></li>
+        </ul>
+      </div>
+    </label>
+
+  </div>
+
+{{ if indifference == 1 }}
+<div class="parent-container">
+  <div class="centered-div">
+        <label class="transcript-option">
+      <input type="radio" name="selected_transcript" value="3" required>
+      <div class="transcript" style="text-align: center">
+            <p>I am indifferent / I think they scored the same</p>
+      </div>
+        </label>
+</div>
+</div>
+{{ else }}
+{{ endif }}
+
+
+<br>
+<br>
+
+{{ formfield_errors 'selected_transcript' }}
+<div style="text-align: center; margin-left: -10px;">
+    <p id="button-text" style="font-size: small;">
+        Submit button will display after a few seconds.
+    </p>
+
+    <div id="next-button-wrapper" style="display: none;">
+        <button class="otree-btn-next btn btn-primary">Submit</button>
+    </div>
+    <span id="no-selection-error" style="display:none; color:red;">
+    Please select one of the options before submitting.
+</span>
+        <p id="time-warning" style="display:none; color:red; font-weight:bold; margin-top:10px;">
+    Less than 10 seconds remaining — please submit your answer.
+</p>
+</div>
+
+
+<script>
+
+<!--    displays the custom timer   -->
+let test = js_vars.test;
+
+    document.addEventListener("DOMContentLoaded", function () {
+        let customTimerEle = document.getElementById('time-left');
+
+        $('.otree-timer__time-left').on('update.countdown', function (event) {
+            let minutes = event.offset.minutes;
+            let seconds = event.offset.seconds;
+
+            // zero-pad seconds
+            let formatted = minutes + ':' + String(seconds).padStart(2, '0');
+
+            customTimerEle.innerText = formatted;
+        });
+    });
+
+<!--    displays the next button when given number of seconds elapse   -->
+    document.addEventListener("DOMContentLoaded", function () {
+
+    if (test == 1) {
+    var UNLOCK_AT = 119; // seconds remaining
+    } else {
+    var UNLOCK_AT = 105;
+    }
+
+    const textEl = document.getElementById("button-text");
+    const buttonWrapper = document.getElementById("next-button-wrapper");
+
+    let unlocked = false;
+    let warnShown = false;
+
+    $('.otree-timer__time-left').on('update.countdown', function (event) {
+        const remaining = event.offset.totalSeconds;
+
+        // Unlock exactly once
+        if (!unlocked && remaining <= UNLOCK_AT) {
+            unlocked = true;
+
+            buttonWrapper.style.display = "block";
+            textEl.style.display = "none";
+        }
+
+        // Show warning and red timer when 10 seconds remain
+        if (!warnShown && remaining <= 10) {
+            warnShown = true;
+            document.getElementById('time-left').style.color = "red";
+            document.getElementById('time-warning').style.display = 'block';
+        }
+    });
+});
+
+        document.querySelector('.otree-btn-next').addEventListener('click', function(e) {
+    const selected = document.querySelector('input[name="selected_transcript"]:checked');
+    if (!selected) {
+        e.preventDefault();
+        e.stopImmediatePropagation();
+        document.getElementById('no-selection-error').style.display = 'block';
+    }
+});
+
+</script>
+
+{{ endblock }}

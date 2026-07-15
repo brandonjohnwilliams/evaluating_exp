@@ -1,0 +1,36 @@
+{{ block title }}
+    Survey
+{{ endblock }}
+
+{{ block content }}
+
+<head>
+    <link rel="stylesheet" type="text/css" href="{{ static 'styles.css'}}">
+</head>
+<p>Indicate your agreement with the following sentence: “When it comes to my classwork, I am willing to take on difficult assignments or topics, even if I am not sure I will succeed.”</p>
+<table class="likert-table">
+    <tr class="likert-labels">
+        <td>Strongly<br>Disagree</td>
+        <td>Disagree</td>
+        <td>Slightly<br>Disagree</td>
+        <td>Neutral</td>
+        <td>Slightly<br>Agree</td>
+        <td>Agree</td>
+        <td>Strongly<br>Agree</td>
+    </tr>
+    <tr class="likert-options">
+        {% for choice in form.risk %}
+            <td>{{ choice }}</td>
+        {% endfor %}
+    </tr>
+</table>
+
+<br>
+<br>
+
+
+<div style="text-align: right;">
+{{ next_button }}
+</div>
+
+{{ endblock }}

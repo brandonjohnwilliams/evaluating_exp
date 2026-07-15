@@ -1,0 +1,547 @@
+============================================================
+RANDOMIZATION SUMMARY REPORT
+Groups: 80  |  Pairs: 24
+============================================================
+
+1. GRAND TOTAL VS TARGET
+------------------------------------------------------------
+Combo      Actual   Target    Delta      Pct
+------------------------------------------------------------
+M/F           720    720.0     +0.0    37.5%
+F/M           720    720.0     +0.0    37.5%
+M/M           240    240.0     +0.0    12.5%
+F/F           240    240.0     +0.0    12.5%
+
+2. GENDER COUNTS BY PAIR ID
+------------------------------------------------------------
+PairID      F/F    M/F    M/M    F/M  Total  MM+FF
+------------------------------------------------------------
+1            10     30     10     30     80     20
+2            10     30     10     30     80     20
+3            10     30     10     30     80     20
+4            10     30     10     30     80     20
+5            10     30     10     30     80     20
+6            10     30     10     30     80     20
+7            10     30     10     30     80     20
+8            10     30     10     30     80     20
+9            10     30     10     30     80     20
+10           10     30     10     30     80     20
+11           10     30     10     30     80     20
+12           10     30     10     30     80     20
+13           10     30     10     30     80     20
+14           10     30     10     30     80     20
+15           10     30     10     30     80     20
+16           10     30     10     30     80     20
+17           10     30     10     30     80     20
+18           10     30     10     30     80     20
+19           10     30     10     30     80     20
+20           10     30     10     30     80     20
+21           10     30     10     30     80     20
+22           10     30     10     30     80     20
+23           10     30     10     30     80     20
+24           10     30     10     30     80     20
+
+3. GPA BY GENDER COMBO
+------------------------------------------------------------
+  Average GPA across all pairs by gender combo:
+  Combo         N   Mean GPA      Min      Max
+  --------------------------------------------
+  M/F        1440     3.6119   3.4380   4.0000
+  F/M        1440     3.6119   3.4380   4.0000
+  M/M         480     3.6119   3.4380   4.0000
+  F/F         480     3.6119   3.4380   4.0000
+
+  Mean GPA per pair_id by gender combo:
+  PairID        M/F      F/M      M/M      F/F
+  ----------------------------------------
+  1           3.719    3.719    3.719    3.719
+  2           3.750    3.750    3.750    3.750
+  3           3.781    3.781    3.781    3.781
+  4           3.594    3.594    3.593    3.593
+  5           3.562    3.562    3.562    3.562
+  6           3.531    3.531    3.531    3.531
+  7           3.562    3.562    3.562    3.562
+  8           3.562    3.562    3.562    3.562
+  9           3.500    3.500    3.500    3.500
+  10          3.469    3.469    3.469    3.469
+  11          3.500    3.500    3.500    3.500
+  12          3.531    3.531    3.531    3.531
+  13          3.469    3.469    3.469    3.469
+  14          3.500    3.500    3.500    3.500
+  15          3.500    3.500    3.500    3.500
+  16          3.469    3.469    3.469    3.469
+  17          3.500    3.500    3.500    3.500
+  18          3.531    3.531    3.531    3.531
+  19          3.500    3.500    3.500    3.500
+  20          3.938    3.938    3.938    3.938
+  21          4.000    4.000    4.000    4.000
+  22          3.969    3.969    3.969    3.969
+  23          3.656    3.656    3.656    3.656
+  24          3.594    3.594    3.594    3.594
+
+4. GROUP-LEVEL BALANCE
+------------------------------------------------------------
+Group         M/F    F/M    M/M    F/F  Total
+------------------------------------------------------------
+0               9      9      3      3     24
+1               9      9      3      3     24
+2               9      9      3      3     24
+3               9      9      3      3     24
+4               9      9      3      3     24
+5               9      9      3      3     24
+6               9      9      3      3     24
+7               9      9      3      3     24
+8               9      9      3      3     24
+9               9      9      3      3     24
+10              9      9      3      3     24
+11              9      9      3      3     24
+12              9      9      3      3     24
+13              9      9      3      3     24
+14              9      9      3      3     24
+15              9      9      3      3     24
+16              9      9      3      3     24
+17              9      9      3      3     24
+18              9      9      3      3     24
+19              9      9      3      3     24
+20              9      9      3      3     24
+21              9      9      3      3     24
+22              9      9      3      3     24
+23              9      9      3      3     24
+24              9      9      3      3     24
+25              9      9      3      3     24
+26              9      9      3      3     24
+27              9      9      3      3     24
+28              9      9      3      3     24
+29              9      9      3      3     24
+30              9      9      3      3     24
+31              9      9      3      3     24
+32              9      9      3      3     24
+33              9      9      3      3     24
+34              9      9      3      3     24
+35              9      9      3      3     24
+36              9      9      3      3     24
+37              9      9      3      3     24
+38              9      9      3      3     24
+39              9      9      3      3     24
+40              9      9      3      3     24
+41              9      9      3      3     24
+42              9      9      3      3     24
+43              9      9      3      3     24
+44              9      9      3      3     24
+45              9      9      3      3     24
+46              9      9      3      3     24
+47              9      9      3      3     24
+48              9      9      3      3     24
+49              9      9      3      3     24
+50              9      9      3      3     24
+51              9      9      3      3     24
+52              9      9      3      3     24
+53              9      9      3      3     24
+54              9      9      3      3     24
+55              9      9      3      3     24
+56              9      9      3      3     24
+57              9      9      3      3     24
+58              9      9      3      3     24
+59              9      9      3      3     24
+60              9      9      3      3     24
+61              9      9      3      3     24
+62              9      9      3      3     24
+63              9      9      3      3     24
+64              9      9      3      3     24
+65              9      9      3      3     24
+66              9      9      3      3     24
+67              9      9      3      3     24
+68              9      9      3      3     24
+69              9      9      3      3     24
+70              9      9      3      3     24
+71              9      9      3      3     24
+72              9      9      3      3     24
+73              9      9      3      3     24
+74              9      9      3      3     24
+75              9      9      3      3     24
+76              9      9      3      3     24
+77              9      9      3      3     24
+78              9      9      3      3     24
+79              9      9      3      3     24
+
+5. NAME USAGE SUMMARY
+------------------------------------------------------------
+Name                   Gender    Count
+------------------------------------------------------------
+Emily                       F       87
+Jacob                       M       80
+Emma                        F       79
+Michael                     M       78
+Hannah                      F       68
+Isabella                    F       68
+Madison                     F       68
+Joshua                      M       64
+Alexander                   M       63
+Elizabeth                   F       63
+Abigail                     F       62
+Anthony                     M       61
+Ashley                      F       60
+Olivia                      F       57
+Daniel                      M       56
+Christopher                 M       55
+Ethan                       M       55
+Samantha                    F       55
+Matthew                     M       54
+Sarah                       F       53
+John                        M       52
+Andrew                      M       49
+Brandon                     M       49
+Tyler                       M       49
+James                       M       48
+Brianna                     F       46
+David                       M       46
+Grace                       F       46
+Alexis                      F       45
+Sophia                      F       43
+Joseph                      M       42
+Nicholas                    M       42
+Alyssa                      F       41
+Ava                         F       41
+Kayla                       F       41
+Dylan                       M       40
+Lauren                      F       40
+Nathan                      M       39
+Samuel                      M       38
+Taylor                      F       38
+Kevin                       M       37
+Victoria                    F       37
+Christian                   M       36
+Elijah                      M       36
+William                     M       36
+Jessica                     F       35
+Jonathan                    M       35
+Jordan                      M       35
+Justin                      M       35
+Natalie                     F       35
+Chloe                       F       34
+Destiny                     F       34
+Isaiah                      M       34
+Mia                         F       34
+Anna                        F       33
+Logan                       M       33
+Noah                        M       33
+Ryan                        M       33
+Benjamin                    M       32
+Robert                      M       32
+Sydney                      F       32
+Caleb                       M       31
+Gabriel                     M       31
+Jose                        M       31
+Megan                       F       31
+Ella                        F       30
+Jennifer                    F       30
+Kaylee                      F       30
+Zachary                     M       30
+Jasmine                     F       29
+Hailey                      F       28
+Austin                      M       27
+Julia                       F       27
+Allison                     F       26
+Jason                       M       26
+Brooke                      F       25
+Evan                        M       25
+Katherine                   F       25
+Lily                        F       25
+Maria                       F       25
+Savannah                    F       25
+Jack                        M       24
+Jackson                     M       24
+Luke                        M       24
+Mason                       M       24
+Morgan                      F       24
+Rachel                      F       24
+Alexandra                   F       23
+Haley                       F       23
+Nicole                      F       23
+Cameron                     M       22
+Thomas                      M       21
+Hunter                      M       20
+Kaitlyn                     F       20
+Makayla                     F       20
+Jayden                      M       19
+Addison                     F       17
+Angel                       M       17
+Isaac                       M       17
+Mackenzie                   F       15
+
+  Name reuse within group (count > 2 flagged):
+  Group      Name                   Gender    Count
+  --------------------------------------------
+  0          Emily                       F        3
+  1          Emily                       F        4
+  2          Emma                        F        3
+  2          Grace                       F        3
+  2          Jonathan                    M        3
+  3          Samuel                      M        3
+  4          Kayla                       F        3
+  4          Michael                     M        3
+  5          Brianna                     F        3
+  5          Sophia                      F        3
+  6          Emma                        F        4
+  7          Elizabeth                   F        3
+  8          Emma                        F        3
+  9          Joshua                      M        3
+  10         Dylan                       M        3
+  10         Christopher                 M        3
+  11         Ethan                       M        3
+  12         Alexander                   M        3
+  12         Chloe                       F        3
+  12         Madison                     F        3
+  14         Madison                     F        3
+  16         Emma                        F        3
+  16         Isabella                    F        3
+  17         Ethan                       M        4
+  18         Abigail                     F        4
+  18         Alexander                   M        3
+  18         Jonathan                    M        3
+  19         Alexander                   M        3
+  19         Hannah                      F        3
+  20         Michael                     M        3
+  20         Hannah                      F        3
+  20         Matthew                     M        3
+  21         Isabella                    F        3
+  23         Alyssa                      F        3
+  23         Alexandra                   F        3
+  23         Daniel                      M        3
+  23         William                     M        3
+  24         Jacob                       M        3
+  27         Jennifer                    F        4
+  28         Michael                     M        3
+  29         Destiny                     F        3
+  30         Jackson                     M        3
+  31         Hannah                      F        3
+  31         David                       M        3
+  31         Elijah                      M        3
+  32         John                        M        3
+  32         Emily                       F        3
+  34         Isabella                    F        3
+  35         Ava                         F        3
+  36         Emma                        F        4
+  36         Sarah                       F        3
+  37         Isabella                    F        3
+  38         Isabella                    F        3
+  39         Ella                        F        3
+  39         Megan                       F        3
+  40         Elizabeth                   F        3
+  41         Matthew                     M        4
+  41         Abigail                     F        3
+  41         Madison                     F        3
+  44         Sophia                      F        3
+  45         Evan                        M        3
+  45         Mia                         F        3
+  46         Ashley                      F        3
+  46         Jacob                       M        3
+  47         James                       M        3
+  48         Olivia                      F        3
+  48         Samantha                    F        3
+  49         Abigail                     F        3
+  50         Elizabeth                   F        4
+  52         Michael                     M        4
+  52         Emily                       F        3
+  53         Madison                     F        3
+  53         Andrew                      M        3
+  53         Emily                       F        3
+  54         Samantha                    F        3
+  54         Christian                   M        3
+  55         Alexander                   M        3
+  56         Kaylee                      F        4
+  56         Joshua                      M        3
+  57         Olivia                      F        3
+  58         Olivia                      F        3
+  59         Anthony                     M        4
+  60         Andrew                      M        3
+  60         Elizabeth                   F        3
+  61         Joshua                      M        3
+  61         Madison                     F        3
+  61         Ashley                      F        3
+  63         Ella                        F        3
+  63         Christopher                 M        3
+  63         Jacob                       M        3
+  64         Luke                        M        3
+  65         Samantha                    F        3
+  65         Brandon                     M        3
+  65         Abigail                     F        3
+  66         Emily                       F        3
+  66         Samantha                    F        3
+  67         Jacob                       M        3
+  68         Anna                        F        3
+  68         Daniel                      M        3
+  68         Elijah                      M        3
+  69         William                     M        3
+  69         Sydney                      F        3
+  70         Jacob                       M        3
+  71         Destiny                     F        4
+  71         James                       M        3
+  73         Emma                        F        3
+  73         Jacob                       M        3
+  74         Emma                        F        3
+  74         Emily                       F        3
+  75         Hannah                      F        3
+  75         Michael                     M        3
+  76         John                        M        3
+  77         Michael                     M        3
+  78         Anthony                     M        3
+  78         Kayla                       F        3
+  78         Emma                        F        3
+  79         John                        M        5
+  79         Lily                        F        3
+
+6. GROUP DETAIL
+------------------------------------------------------------
+Group         M/F    F/M    M/M    F/F  Total     RealPair
+------------------------------------------------------------
+0               9      9      3      3     24 riley_graham
+1               9      9      3      3     24 daniel_samantha
+2               9      9      3      3     24 riley_graham
+3               9      9      3      3     24 daniel_samantha
+4               9      9      3      3     24 riley_graham
+5               9      9      3      3     24 daniel_samantha
+6               9      9      3      3     24 riley_graham
+7               9      9      3      3     24 daniel_samantha
+8               9      9      3      3     24 riley_graham
+9               9      9      3      3     24 daniel_samantha
+10              9      9      3      3     24 riley_graham
+11              9      9      3      3     24 daniel_samantha
+12              9      9      3      3     24 riley_graham
+13              9      9      3      3     24 daniel_samantha
+14              9      9      3      3     24 riley_graham
+15              9      9      3      3     24 daniel_samantha
+16              9      9      3      3     24 riley_graham
+17              9      9      3      3     24 daniel_samantha
+18              9      9      3      3     24 riley_graham
+19              9      9      3      3     24 daniel_samantha
+20              9      9      3      3     24 riley_graham
+21              9      9      3      3     24 daniel_samantha
+22              9      9      3      3     24 riley_graham
+23              9      9      3      3     24 daniel_samantha
+24              9      9      3      3     24 riley_graham
+25              9      9      3      3     24 daniel_samantha
+26              9      9      3      3     24 riley_graham
+27              9      9      3      3     24 daniel_samantha
+28              9      9      3      3     24 riley_graham
+29              9      9      3      3     24 daniel_samantha
+30              9      9      3      3     24 riley_graham
+31              9      9      3      3     24 daniel_samantha
+32              9      9      3      3     24 riley_graham
+33              9      9      3      3     24 daniel_samantha
+34              9      9      3      3     24 riley_graham
+35              9      9      3      3     24 daniel_samantha
+36              9      9      3      3     24 riley_graham
+37              9      9      3      3     24 daniel_samantha
+38              9      9      3      3     24 riley_graham
+39              9      9      3      3     24 daniel_samantha
+40              9      9      3      3     24 riley_graham
+41              9      9      3      3     24 daniel_samantha
+42              9      9      3      3     24 riley_graham
+43              9      9      3      3     24 daniel_samantha
+44              9      9      3      3     24 riley_graham
+45              9      9      3      3     24 daniel_samantha
+46              9      9      3      3     24 riley_graham
+47              9      9      3      3     24 daniel_samantha
+48              9      9      3      3     24 riley_graham
+49              9      9      3      3     24 daniel_samantha
+50              9      9      3      3     24 riley_graham
+51              9      9      3      3     24 daniel_samantha
+52              9      9      3      3     24 riley_graham
+53              9      9      3      3     24 daniel_samantha
+54              9      9      3      3     24 riley_graham
+55              9      9      3      3     24 daniel_samantha
+56              9      9      3      3     24 riley_graham
+57              9      9      3      3     24 daniel_samantha
+58              9      9      3      3     24 riley_graham
+59              9      9      3      3     24 daniel_samantha
+60              9      9      3      3     24 riley_graham
+61              9      9      3      3     24 daniel_samantha
+62              9      9      3      3     24 riley_graham
+63              9      9      3      3     24 daniel_samantha
+64              9      9      3      3     24 riley_graham
+65              9      9      3      3     24 daniel_samantha
+66              9      9      3      3     24 riley_graham
+67              9      9      3      3     24 daniel_samantha
+68              9      9      3      3     24 riley_graham
+69              9      9      3      3     24 daniel_samantha
+70              9      9      3      3     24 riley_graham
+71              9      9      3      3     24 daniel_samantha
+72              9      9      3      3     24 riley_graham
+73              9      9      3      3     24 daniel_samantha
+74              9      9      3      3     24 riley_graham
+75              9      9      3      3     24 daniel_samantha
+76              9      9      3      3     24 riley_graham
+77              9      9      3      3     24 daniel_samantha
+78              9      9      3      3     24 riley_graham
+79              9      9      3      3     24 daniel_samantha
+
+============================================================
+
+7. VERIFICATION CHECKS
+------------------------------------------------------------
+PASSED -- No errors found.
+No warnings.
+
+  Real pair distribution:
+  Key                   Count   Expected
+  --------------------------------------
+  riley_graham             40         40
+  daniel_samantha          40         40
+
+============================================================
+
+8. ADJACENT GROUP PAIR OVERLAP
+------------------------------------------------------------
+  Checks how many (pair_id, gender_combo) assignments are
+  identical between each adjacent group pair (0-1, 2-3, ...).
+------------------------------------------------------------
+  Groups        Matches   Out Of      Pct
+  ----------------------------------------
+  0-1                 6       24    25.0%
+  2-3                 6       24    25.0%
+  4-5                 6       24    25.0%
+  6-7                 6       24    25.0%
+  8-9                 6       24    25.0%
+  10-11               6       24    25.0%
+  12-13               6       24    25.0%
+  14-15               6       24    25.0%
+  16-17               6       24    25.0%
+  18-19               6       24    25.0%
+  20-21               6       24    25.0%
+  22-23               6       24    25.0%
+  24-25               6       24    25.0%
+  26-27               6       24    25.0%
+  28-29               6       24    25.0%
+  30-31               6       24    25.0%
+  32-33               6       24    25.0%
+  34-35               6       24    25.0%
+  36-37               6       24    25.0%
+  38-39               6       24    25.0%
+  40-41               6       24    25.0%
+  42-43               6       24    25.0%
+  44-45               6       24    25.0%
+  46-47               6       24    25.0%
+  48-49               6       24    25.0%
+  50-51               6       24    25.0%
+  52-53               6       24    25.0%
+  54-55               6       24    25.0%
+  56-57               6       24    25.0%
+  58-59               6       24    25.0%
+  60-61               6       24    25.0%
+  62-63               6       24    25.0%
+  64-65               6       24    25.0%
+  66-67               6       24    25.0%
+  68-69               6       24    25.0%
+  70-71               6       24    25.0%
+  72-73               6       24    25.0%
+  74-75               6       24    25.0%
+  76-77               6       24    25.0%
+  78-79               6       24    25.0%
+
+  Summary:
+  Min matches:  6
+  Max matches:  6
+  Mean matches: 6.00
+
+============================================================

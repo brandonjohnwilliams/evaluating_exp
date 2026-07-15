@@ -1,0 +1,41 @@
+{{ block title }}
+Evaluation Task 1
+{{ endblock }}
+
+{{ block content }}
+    <head>
+        <link rel="stylesheet" type="text/css" href="{{ static 'styles.css'}}">
+    </head>
+
+<!-- Text -->
+
+<p>
+    You will be shown 25 pairs of student profiles.
+    For each pair <b>you are asked to guess which of the two students had the largest number of correct answers on a multiple-choice economics quiz.</b>
+</p>
+<p>
+One or more profiles are of real students at the University of Pittsburgh, others are hypothetical.
+    Real profiles are of students who have taken the multiple-choice economics quiz,
+    and who are majoring in or intending to major in economics.
+    Students in each pair have taken similar and equally challenging classes and have a GPA of 3.4 or higher.
+    Course grades are listed highest to lowest.
+    You will not learn which profiles are real and which are hypothetical,
+    but it is in your interest to think of all profiles as having the characteristics of the real students.
+</p>
+<p>
+    After you have completed your evaluations, we will randomly select one pair of real student profiles to count for payment.
+    You will be paid $10 if you have correctly guessed which of the two students had the larger number of correct answers.
+</p>
+<p>
+    Please raise your hand if you have any questions, and we will come to answer you in private.
+    When you are ready to proceed to the comprehension check, click next.
+</p>
+
+<div style="text-align: right;">
+
+        <button class="otree-btn-next btn btn-primary">Next</button>
+
+</div>
+<!-- Include JavaScript file -->
+
+{{ endblock }}
