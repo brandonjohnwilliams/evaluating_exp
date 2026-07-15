@@ -169,7 +169,11 @@ def creating_session(subsession):
         second_profile = pair[second_key]
 
         player.json_group = str(player.participant.vars['p1_json_group'])
-        player.target_group = str(player.participant.vars['p2_json_group'])
+        player.target_group = str(player.participant.vars['p2_target_group'])
+
+        if player.id_in_subsession == 1 and player.round_number == 1:
+            print("For player 1, own group from part 1 is stored as ", player.json_group, " and target group for part 2 is stored as ", player.target_group)
+
         player.pair_id = pair['pair_id']
 
         # store all the variables
@@ -305,6 +309,7 @@ class Evaluation(Page):
 
         # --- lookups from participant.vars (set during part 2 group assignment) ---
         target_group = participant.vars.get('p2_target_group')
+
         pair_id = player.pair_id
 
         # --- part 1 results, saved at session level ---
@@ -316,11 +321,17 @@ class Evaluation(Page):
         actual_winner = pair_result['majority_choice']  # 'profile_1', 'profile_2', or 'tie'
         player_guess = player.chosen_profile_index
 
+        # initialize running payoff tally
+        if 'p2_correct' not in player.participant.vars:
+            player.participant.vars['p2_correct'] = 0
+
         if actual_winner == 'tie':
             player.prediction_correct = True
         else:
             player.prediction_correct = (player_guess == actual_winner)
 
+        if player.prediction_correct:
+            player.participant.vars['p2_correct'] += 1
 
 page_sequence = [
     Welcome,

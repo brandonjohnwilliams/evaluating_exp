@@ -23,16 +23,11 @@ SESSION_CONFIGS = [
         starting_group='0',  # this determines which group to assign first, continuing from previous session if needed
         num_demo_participants=20,
         use_browser_bots=False,
+        test=False,
+        pay_correct=1,
 
         # 'profile_1' is always the better performer in real evaluation
         real_pair_correct_answer='profile_1',
-
-        # unclear if the rest of these are used or left over - review
-        random_order=False,
-        indifference=False,
-        pay_correct=1,
-        test=False,
-        pay_real_pair=7,
     ),
     dict(
         # this app automatically launches a link in multiple tabs

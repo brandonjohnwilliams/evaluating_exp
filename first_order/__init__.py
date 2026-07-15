@@ -479,7 +479,6 @@ class ComprehensionCheck(Page):
         else:
             player.participant.comprehension1pay = 0
 
-        print("Paying: ", player.participant.comprehension1pay)
 
 
 class Begin(Page):
