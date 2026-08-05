@@ -60,7 +60,7 @@ PARTICIPANT_FIELDS = [
     'p1_profile_order_sequence',
 
     # tallying
-    'first_order_player_set'
+    'first_order_player_set',
 
     # Part 2 sequence data
     'p2_shared_sequence',
