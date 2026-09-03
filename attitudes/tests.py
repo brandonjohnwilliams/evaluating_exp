@@ -6,25 +6,23 @@ from . import *
 class PlayerBot(Bot):
     def play_round(self):
 
-
-        # 5) Submit
         yield Risk, {
-            'risk': 7,
+            'risk': random.randint(1, 7),
         }
 
         yield Confidence, {
-            'confidence': 7,
+            'confidence': random.randint(1, 7),
         }
 
         yield Rank, {
-            'rank': 100,
+            'rank': random.randint(1, 100),
         }
 
         yield Disappointment, {
-            'disappointment': 7,
+            'disappointment': random.randint(1, 7),
         }
 
         yield Perfection, {
-            'perfection': 7,
+            'perfection': random.randint(1, 7),
         }
 

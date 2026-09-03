@@ -64,33 +64,30 @@ def pick_male(player, pair, first_key, second_key):
     else:
         return random.choice([1, 2])
 
-def pick_male_bias_10(player, pair, first_key, second_key):
+def pick_male_bias_10(player):
     """Male profile is 10% more likely to be chosen than female.
     In mixed-gender pairs: male chosen with 55% probability, female with 45%.
     In same-gender pairs: picks randomly."""
-    g1 = pair['profile_1']['gender']
-    g2 = pair['profile_2']['gender']
+    g1 = player.gender_1
+    g2 = player.gender_2
     if g1 == g2:
         return random.choice([1, 2])
-    # Assign 55/45 weights based on which profile is male
     weights = [0.55 if g1 == 'M' else 0.45,
                0.55 if g2 == 'M' else 0.45]
     return random.choices([1, 2], weights=weights, k=1)[0]
 
-def pick_male_bias_30(player, pair, first_key, second_key):
+
+def pick_male_bias_30(player):
     """Male profile is 30% more likely to be chosen than female.
     In mixed-gender pairs: male chosen with 65% probability, female with 35%.
     In same-gender pairs: picks randomly."""
-    g1 = pair['profile_1']['gender']
-    g2 = pair['profile_2']['gender']
+    g1 = player.gender_1
+    g2 = player.gender_2
     if g1 == g2:
         return random.choice([1, 2])
     weights = [0.65 if g1 == 'M' else 0.35,
                0.65 if g2 == 'M' else 0.35]
     return random.choices([1, 2], weights=weights, k=1)[0]
-
-# Set your strategy here
-STRATEGY = pick_male_bias_30
 
 class PlayerBot(Bot):
     def play_round(self):
@@ -100,12 +97,6 @@ class PlayerBot(Bot):
             yield Submission(ComprehensionCheck, {'comprehension_q1': 'C'}, check_html=False)
             yield Submission(Begin, check_html=False)
 
-        shared_sequence = self.participant.vars['p2_shared_sequence']
-        pair_index = self.participant.vars['p2_pair_sequence'][self.player.round_number - 1]
-        pair = shared_sequence[pair_index]
-        first_key, second_key = self.participant.vars['p2_profile_order_sequence'][self.player.round_number - 1]
+        choice = pick_male_bias_10(self.player)
 
-        choice = STRATEGY(self.player, pair, first_key, second_key)
-
-        yield Submission(Evaluation, {'selected_transcript': choice}, check_html=False)
-
+        yield Submission(Evaluation, dict(selected_transcript=choice), check_html=False)
