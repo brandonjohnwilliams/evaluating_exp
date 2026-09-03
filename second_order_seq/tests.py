@@ -97,6 +97,6 @@ class PlayerBot(Bot):
             yield Submission(ComprehensionCheck, {'comprehension_q1': 'C'}, check_html=False)
             yield Submission(Begin, check_html=False)
 
-        choice = pick_male_bias_10(self.player)
+        choice = pick_male_bias_30(self.player)
 
         yield Submission(Evaluation, dict(selected_transcript=choice), check_html=False)
