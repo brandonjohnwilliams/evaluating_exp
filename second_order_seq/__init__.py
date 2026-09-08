@@ -318,7 +318,11 @@ class Evaluation(Page):
         group_results = results.get(target_group, {})
         pair_result = group_results.get(pair_id)
 
-        actual_winner = pair_result['majority_choice']  # 'profile_1', 'profile_2', or 'tie'
+        if player.session.config.get('test'):
+            actual_winner = random.choice(['Profile_1', 'Profile_2'])
+        else:
+            actual_winner = pair_result['majority_choice']  # 'profile_1', 'profile_2', or 'tie'
+
         player_guess = player.chosen_profile_index
 
         # initialize running payoff tally

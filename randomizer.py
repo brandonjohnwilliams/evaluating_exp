@@ -26,7 +26,7 @@ num_clusters = 10
 REAL_PAIR_ID = 25
 
 # establish seed for reproducibility
-random.seed(123)
+random.seed(111)
 
 # gender split - how many mixed pairs?
 MF_split = .75

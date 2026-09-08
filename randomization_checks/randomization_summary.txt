@@ -168,228 +168,232 @@ Group         M/F    F/M    M/M    F/F  Total
 ------------------------------------------------------------
 Name                   Gender    Count
 ------------------------------------------------------------
-Emily                       F       87
-Jacob                       M       80
-Emma                        F       79
-Michael                     M       78
-Hannah                      F       68
-Isabella                    F       68
-Madison                     F       68
+Emily                       F      103
+Isabella                    F       76
+Christopher                 M       71
+Emma                        F       71
+Madison                     F       69
+Alyssa                      F       66
+Jacob                       M       64
 Joshua                      M       64
-Alexander                   M       63
-Elizabeth                   F       63
-Abigail                     F       62
-Anthony                     M       61
-Ashley                      F       60
-Olivia                      F       57
-Daniel                      M       56
-Christopher                 M       55
-Ethan                       M       55
-Samantha                    F       55
-Matthew                     M       54
-Sarah                       F       53
-John                        M       52
-Andrew                      M       49
-Brandon                     M       49
-Tyler                       M       49
-James                       M       48
-Brianna                     F       46
+Alexis                      F       59
+Elizabeth                   F       59
+Ryan                        M       59
+Olivia                      F       58
+Hannah                      F       57
+James                       M       57
+Joseph                      M       57
+Michael                     M       57
+Samantha                    F       57
+Abigail                     F       54
+Anthony                     M       52
+Ashley                      F       52
+Daniel                      M       52
+Natalie                     F       51
+Sophia                      F       51
+Taylor                      F       48
+Matthew                     M       47
 David                       M       46
-Grace                       F       46
-Alexis                      F       45
-Sophia                      F       43
-Joseph                      M       42
-Nicholas                    M       42
-Alyssa                      F       41
-Ava                         F       41
-Kayla                       F       41
-Dylan                       M       40
-Lauren                      F       40
-Nathan                      M       39
-Samuel                      M       38
-Taylor                      F       38
-Kevin                       M       37
-Victoria                    F       37
-Christian                   M       36
-Elijah                      M       36
-William                     M       36
-Jessica                     F       35
-Jonathan                    M       35
-Jordan                      M       35
-Justin                      M       35
-Natalie                     F       35
-Chloe                       F       34
-Destiny                     F       34
-Isaiah                      M       34
-Mia                         F       34
-Anna                        F       33
-Logan                       M       33
-Noah                        M       33
-Ryan                        M       33
-Benjamin                    M       32
-Robert                      M       32
-Sydney                      F       32
-Caleb                       M       31
-Gabriel                     M       31
-Jose                        M       31
-Megan                       F       31
-Ella                        F       30
-Jennifer                    F       30
-Kaylee                      F       30
-Zachary                     M       30
-Jasmine                     F       29
-Hailey                      F       28
-Austin                      M       27
+Brandon                     M       45
+Grace                       F       45
+Alexander                   M       44
+Sarah                       F       44
+Andrew                      M       43
+Brianna                     F       43
+Jonathan                    M       43
+Tyler                       M       43
+Chloe                       F       42
+John                        M       42
+Nathan                      M       42
+Noah                        M       42
+Samuel                      M       42
+William                     M       41
+Benjamin                    M       40
+Gabriel                     M       40
+Logan                       M       40
+Zachary                     M       39
+Ethan                       M       38
+Kevin                       M       38
+Nicholas                    M       38
+Ava                         F       37
+Anna                        F       36
+Justin                      M       36
+Lauren                      F       36
+Morgan                      F       35
+Megan                       F       34
+Caleb                       M       33
+Jason                       M       33
+Kayla                       F       33
+Dylan                       M       32
+Victoria                    F       32
+Hailey                      F       31
+Cameron                     M       30
+Destiny                     F       30
+Jackson                     M       30
+Mia                         F       30
+Allison                     F       29
+Elijah                      M       29
+Robert                      M       29
+Christian                   M       28
+Jessica                     F       28
+Katherine                   F       28
+Thomas                      M       28
+Brooke                      F       27
+Jack                        M       27
 Julia                       F       27
-Allison                     F       26
-Jason                       M       26
-Brooke                      F       25
+Mackenzie                   F       27
+Mason                       M       27
+Austin                      M       26
+Isaiah                      M       26
 Evan                        M       25
-Katherine                   F       25
-Lily                        F       25
-Maria                       F       25
+Jayden                      M       25
+Makayla                     F       25
 Savannah                    F       25
-Jack                        M       24
-Jackson                     M       24
+Angel                       M       24
+Isaac                       M       24
+Jose                        M       24
+Kaylee                      F       24
 Luke                        M       24
-Mason                       M       24
-Morgan                      F       24
-Rachel                      F       24
-Alexandra                   F       23
-Haley                       F       23
-Nicole                      F       23
-Cameron                     M       22
-Thomas                      M       21
-Hunter                      M       20
+Ella                        F       23
+Alexandra                   F       22
+Haley                       F       22
+Jennifer                    F       22
+Sydney                      F       22
+Addison                     F       21
+Maria                       F       21
 Kaitlyn                     F       20
-Makayla                     F       20
-Jayden                      M       19
-Addison                     F       17
-Angel                       M       17
-Isaac                       M       17
-Mackenzie                   F       15
+Nicole                      F       20
+Jordan                      M       18
+Lily                        F       18
+Hunter                      M       16
+Rachel                      F       16
+Jasmine                     F       14
 
   Name reuse within group (count > 2 flagged):
   Group      Name                   Gender    Count
   --------------------------------------------
-  0          Emily                       F        3
-  1          Emily                       F        4
-  2          Emma                        F        3
-  2          Grace                       F        3
-  2          Jonathan                    M        3
-  3          Samuel                      M        3
-  4          Kayla                       F        3
-  4          Michael                     M        3
-  5          Brianna                     F        3
-  5          Sophia                      F        3
-  6          Emma                        F        4
-  7          Elizabeth                   F        3
-  8          Emma                        F        3
-  9          Joshua                      M        3
-  10         Dylan                       M        3
-  10         Christopher                 M        3
-  11         Ethan                       M        3
-  12         Alexander                   M        3
-  12         Chloe                       F        3
-  12         Madison                     F        3
-  14         Madison                     F        3
-  16         Emma                        F        3
-  16         Isabella                    F        3
-  17         Ethan                       M        4
-  18         Abigail                     F        4
-  18         Alexander                   M        3
-  18         Jonathan                    M        3
-  19         Alexander                   M        3
-  19         Hannah                      F        3
-  20         Michael                     M        3
-  20         Hannah                      F        3
-  20         Matthew                     M        3
-  21         Isabella                    F        3
-  23         Alyssa                      F        3
-  23         Alexandra                   F        3
-  23         Daniel                      M        3
-  23         William                     M        3
-  24         Jacob                       M        3
-  27         Jennifer                    F        4
-  28         Michael                     M        3
-  29         Destiny                     F        3
-  30         Jackson                     M        3
-  31         Hannah                      F        3
-  31         David                       M        3
-  31         Elijah                      M        3
-  32         John                        M        3
-  32         Emily                       F        3
-  34         Isabella                    F        3
-  35         Ava                         F        3
-  36         Emma                        F        4
-  36         Sarah                       F        3
-  37         Isabella                    F        3
-  38         Isabella                    F        3
-  39         Ella                        F        3
-  39         Megan                       F        3
-  40         Elizabeth                   F        3
-  41         Matthew                     M        4
-  41         Abigail                     F        3
-  41         Madison                     F        3
-  44         Sophia                      F        3
-  45         Evan                        M        3
-  45         Mia                         F        3
-  46         Ashley                      F        3
-  46         Jacob                       M        3
-  47         James                       M        3
-  48         Olivia                      F        3
-  48         Samantha                    F        3
-  49         Abigail                     F        3
-  50         Elizabeth                   F        4
-  52         Michael                     M        4
+  0          Taylor                      F        3
+  4          Emily                       F        3
+  5          William                     M        3
+  5          Hannah                      F        3
+  8          Olivia                      F        3
+  8          Brandon                     M        3
+  9          Emily                       F        3
+  10         Alexander                   M        4
+  10         Elizabeth                   F        4
+  12         Samantha                    F        3
+  14         Jason                       M        3
+  14         Sarah                       F        3
+  16         Christopher                 M        4
+  16         Sophia                      F        3
+  16         Alyssa                      F        3
+  17         Grace                       F        3
+  17         Olivia                      F        3
+  18         Morgan                      F        3
+  19         Chloe                       F        3
+  20         Alyssa                      F        3
+  21         Samantha                    F        3
+  21         Caleb                       M        3
+  21         Olivia                      F        3
+  23         Dylan                       M        4
+  24         Savannah                    F        3
+  25         Emma                        F        3
+  25         Andrew                      M        3
+  26         Hannah                      F        4
+  28         Sophia                      F        3
+  29         Jacob                       M        4
+  29         Grace                       F        3
+  29         Sarah                       F        3
+  33         Joshua                      M        3
+  34         Samuel                      M        3
+  34         Alexander                   M        3
+  35         Taylor                      F        3
+  35         Jacob                       M        3
+  36         Emily                       F        4
+  36         Noah                        M        3
+  36         Ava                         F        3
+  36         Samantha                    F        3
+  36         Jacob                       M        3
+  38         Madison                     F        4
+  39         Olivia                      F        4
+  39         Victoria                    F        3
+  39         James                       M        3
+  39         Joshua                      M        3
+  40         Joshua                      M        3
+  40         Ashley                      F        3
+  40         Justin                      M        3
+  40         Ethan                       M        3
+  41         Isabella                    F        4
+  43         Emily                       F        5
+  43         Emma                        F        3
+  46         Emma                        F        3
+  47         Emily                       F        4
+  47         Alyssa                      F        3
+  47         Ryan                        M        3
+  48         Christopher                 M        3
+  48         Ethan                       M        3
+  49         Emily                       F        3
+  50         Christopher                 M        4
+  50         Michael                     M        3
+  50         Alyssa                      F        3
+  51         Emily                       F        3
+  51         Christopher                 M        3
+  51         Isabella                    F        3
+  51         Olivia                      F        3
+  51         Michael                     M        3
+  51         Gabriel                     M        3
   52         Emily                       F        3
-  53         Madison                     F        3
-  53         Andrew                      M        3
-  53         Emily                       F        3
+  52         Isabella                    F        3
+  53         Zachary                     M        3
+  54         Brianna                     F        3
   54         Samantha                    F        3
-  54         Christian                   M        3
-  55         Alexander                   M        3
-  56         Kaylee                      F        4
-  56         Joshua                      M        3
-  57         Olivia                      F        3
-  58         Olivia                      F        3
-  59         Anthony                     M        4
-  60         Andrew                      M        3
-  60         Elizabeth                   F        3
-  61         Joshua                      M        3
+  54         John                        M        3
+  56         Michael                     M        3
+  56         Daniel                      M        3
+  56         Brianna                     F        3
+  59         Austin                      M        3
+  60         Madison                     F        3
   61         Madison                     F        3
-  61         Ashley                      F        3
-  63         Ella                        F        3
-  63         Christopher                 M        3
-  63         Jacob                       M        3
-  64         Luke                        M        3
+  61         Joseph                      M        3
+  62         Christian                   M        3
+  63         Mackenzie                   F        3
+  63         Elizabeth                   F        3
+  65         Joseph                      M        3
   65         Samantha                    F        3
-  65         Brandon                     M        3
-  65         Abigail                     F        3
-  66         Emily                       F        3
-  66         Samantha                    F        3
-  67         Jacob                       M        3
-  68         Anna                        F        3
-  68         Daniel                      M        3
-  68         Elijah                      M        3
-  69         William                     M        3
-  69         Sydney                      F        3
-  70         Jacob                       M        3
-  71         Destiny                     F        4
-  71         James                       M        3
-  73         Emma                        F        3
-  73         Jacob                       M        3
-  74         Emma                        F        3
-  74         Emily                       F        3
-  75         Hannah                      F        3
-  75         Michael                     M        3
-  76         John                        M        3
-  77         Michael                     M        3
-  78         Anthony                     M        3
-  78         Kayla                       F        3
-  78         Emma                        F        3
-  79         John                        M        5
-  79         Lily                        F        3
+  66         Chloe                       F        4
+  66         Daniel                      M        3
+  66         Tyler                       M        3
+  67         Robert                      M        3
+  68         Joshua                      M        4
+  68         Isabella                    F        3
+  68         Cameron                     M        3
+  68         Emily                       F        3
+  68         Katherine                   F        3
+  69         Christopher                 M        3
+  70         Nicholas                    M        4
+  70         Emily                       F        3
+  72         Alexis                      F        4
+  72         Logan                       M        3
+  72         Isabella                    F        3
+  72         Abigail                     F        3
+  72         Daniel                      M        3
+  73         Isabella                    F        3
+  73         Alexis                      F        3
+  74         Emily                       F        5
+  75         Alexis                      F        4
+  75         Olivia                      F        3
+  75         Matthew                     M        3
+  76         Joshua                      M        3
+  76         Sophia                      F        3
+  76         Elizabeth                   F        3
+  77         Isabella                    F        4
+  77         Jacob                       M        3
+  77         Mason                       M        3
+  78         Emily                       F        4
+  78         Samuel                      M        3
+  78         Chloe                       F        3
+  79         Ashley                      F        4
+  79         Jasmine                     F        3
 
 6. GROUP DETAIL
 ------------------------------------------------------------
