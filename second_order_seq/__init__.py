@@ -250,11 +250,8 @@ class ComprehensionCheck(Page):
                     )
 
     def error_message(player, values):
-        errors = False
         if values['comprehension_q1'] != 'C':
             player.comprehension_q1_attempts += 1
-            errors = True
-        if errors:
             return 'Your answer is incorrect, please try again.'
 
     def before_next_page(player, timeout_happened):
