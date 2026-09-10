@@ -237,6 +237,9 @@ def tally_p1_results(subsession):
             if pid not in votes[sg]:
                 votes[sg][pid] = {'profile_1': 0, 'profile_2': 0, '_ref': p}
 
+            if chosen_canon not in ('profile_1', 'profile_2'):
+                continue
+
             # add to the correct vote
             votes[sg][pid][chosen_canon] += 1
             votes[sg][pid]['_ref'] = p
@@ -409,6 +412,8 @@ class Welcome(Page):
 
 
 class MyWaitPage(WaitPage):
+    wait_for_all_groups = True
+
     @staticmethod
     def is_displayed(player):
         return player.round_number == 1 and not player.session.config.get('test')
