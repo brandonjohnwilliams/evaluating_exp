@@ -191,13 +191,17 @@ def set_chosen_vars(player):
     # store and evaluate special values for real pair
     if player.pair_id == 25:
         player.choice_type = "real pair"
-        # Correct answer read from session config (set to 'profile_1' always)
         correct_answer = player.session.config.get('real_pair_correct_answer')
-        player.real_pair_correct = (player.chosen_profile_index == correct_answer)
 
-        # Store on participant.vars so Part 2 feedback page can display it
-        player.participant.vars['p1_real_pair_correct'] = player.real_pair_correct
-        player.participant.vars['p1_real_pair_chosen_name'] = player.chosen_name
+        if player.chosen_profile_index in ('profile_1', 'profile_2'):
+            player.real_pair_correct = (player.chosen_profile_index == correct_answer)
+            player.participant.vars['p1_real_pair_correct'] = player.real_pair_correct
+            player.participant.vars['p1_real_pair_chosen_name'] = player.chosen_name
+        else:
+            # timed out / no answer on the real pair — set real_pair_correct as False
+            player.real_pair_correct = False
+            player.participant.vars['p1_real_pair_correct'] = player.real_pair_correct
+            player.participant.vars['p1_real_pair_chosen_name'] = None
 
     else:
         player.choice_type = "synthetic pair"

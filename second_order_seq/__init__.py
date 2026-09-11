@@ -296,35 +296,32 @@ class Evaluation(Page):
 
     @staticmethod
     def before_next_page(player, timeout_happened):
-        if timeout_happened or player.field_maybe_none('selected_transcript') is None:
-            return
-
         subsession = player.subsession
         participant = player.participant
 
+        # initialize running tally on round 1 regardless of whether this round was answered,
+        # so the key always exists even for a participant who never answers anything
+        if 'p2_correct' not in participant.vars:
+            participant.vars['p2_correct'] = 0
+
+        if timeout_happened or player.field_maybe_none('selected_transcript') is None:
+            player.prediction_correct = False
+            return
+
         set_chosen_vars(player)
 
-        # --- lookups from participant.vars (set during part 2 group assignment) ---
         target_group = participant.vars.get('p2_target_group')
-
         pair_id = player.pair_id
-
-        # --- part 1 results, saved at session level ---
         results = subsession.session.vars.get('p1_group_results', {})
-
         group_results = results.get(target_group, {})
         pair_result = group_results.get(pair_id)
 
         if player.session.config.get('test'):
             actual_winner = random.choice(['Profile_1', 'Profile_2'])
         else:
-            actual_winner = pair_result['majority_choice']  # 'profile_1', 'profile_2', or 'tie'
+            actual_winner = pair_result['majority_choice']
 
         player_guess = player.chosen_profile_index
-
-        # initialize running payoff tally
-        if 'p2_correct' not in player.participant.vars:
-            player.participant.vars['p2_correct'] = 0
 
         if actual_winner == 'tie':
             player.prediction_correct = True
@@ -332,7 +329,7 @@ class Evaluation(Page):
             player.prediction_correct = (player_guess == actual_winner)
 
         if player.prediction_correct:
-            player.participant.vars['p2_correct'] += 1
+            participant.vars['p2_correct'] += 1
 
 page_sequence = [
     Welcome,
