@@ -193,16 +193,16 @@ def set_chosen_vars(player):
         player.choice_type = "real pair"
         correct_answer = player.session.config.get('real_pair_correct_answer')
 
-        if player.chosen_profile_index in ('profile_1', 'profile_2'):
-            player.real_pair_correct = (player.chosen_profile_index == correct_answer)
-            player.participant.vars['p1_real_pair_correct'] = player.real_pair_correct
+        chosen = player.field_maybe_none('chosen_profile_index')
+
+        if chosen in ('profile_1', 'profile_2'):
+            player.real_pair_correct = (chosen == correct_answer)
             player.participant.vars['p1_real_pair_chosen_name'] = player.chosen_name
         else:
-            # timed out / no answer on the real pair — set real_pair_correct as False
             player.real_pair_correct = False
-            player.participant.vars['p1_real_pair_correct'] = player.real_pair_correct
-            player.participant.vars['p1_real_pair_chosen_name'] = None
+            player.participant.vars['p1_real_pair_chosen_name'] = 'No answer'
 
+        player.participant.vars['p1_real_pair_correct'] = player.real_pair_correct
     else:
         player.choice_type = "synthetic pair"
 
@@ -231,7 +231,7 @@ def tally_p1_results(subsession):
             pid = p.pair_id
 
             # look at the player choice
-            chosen_canon = p.chosen_profile_index
+            chosen_canon = p.field_maybe_none('chosen_profile_index')
 
             # initialize if the subgroup hasn't been encountered yet
             if sg not in votes:
