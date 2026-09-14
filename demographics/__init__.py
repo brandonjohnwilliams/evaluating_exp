@@ -63,9 +63,17 @@ class Player(BasePlayer):
         initial=None,
     )
 
+    no_gpa_freshman = models.BooleanField(
+        label='I am in my first semester at Pitt and do not have a GPA yet',
+        initial=False,
+        blank=True,
+        widget=widgets.CheckboxInput,
+    )
+
     gpa = models.FloatField(
-        label='What is your approximate GPA?',
-        min=0, max=4
+        label='What is your approximate GPA? (If you are in your first semester at Pitt, check the box below.)',
+        min=0, max=4,
+        blank=True,  # now optional at the model level; enforced conditionally below
     )
 
     totalPay = models.IntegerField()
@@ -81,7 +89,13 @@ def creating_session(subsession):
 # PAGES
 class Survey(Page):
     form_model = 'player'
-    form_fields = ['race_raw', 'gender', 'age', 'gpa', 'year', 'english', 'major', 'secondmajor']
+    form_fields = ['race_raw', 'gender', 'age', 'year', 'no_gpa_freshman', 'gpa', 'english', 'major', 'secondmajor']
+
+    @staticmethod
+    def error_message(player, values):
+        if not values.get('no_gpa_freshman') and values.get('gpa') in (None, ''):
+            return 'Please enter your GPA, or check the box to indicate you are in your first semester.'
+
 
     def before_next_page(player, timeout_happened):
         test = 1 if player.session.config.get("test") else 0

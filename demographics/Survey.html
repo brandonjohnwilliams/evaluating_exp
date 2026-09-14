@@ -23,7 +23,11 @@
     {{ formfield player.english }}
     {{ formfield player.major }}
     {{ formfield player.secondmajor }}
-    {{ formfield player.gpa }}
+
+    <div id="id_gpa_div">
+        {{ formfield player.gpa }}
+    </div>
+    {{ formfield player.no_gpa_freshman }}
 
 </div>
 
@@ -74,6 +78,18 @@
   // run once in case you prefill later
   syncRace();
 
+});
+
+    document.addEventListener('DOMContentLoaded', function () {
+    var checkbox = document.querySelector('input[name="no_gpa_freshman"]');
+    var gpaDiv = document.getElementById('id_gpa_div');
+
+    function toggleGpa() {
+        gpaDiv.style.display = checkbox.checked ? 'none' : 'block';
+    }
+
+    checkbox.addEventListener('change', toggleGpa);
+    toggleGpa(); // run once on load in case of back-navigation
 });
 </script>
 
