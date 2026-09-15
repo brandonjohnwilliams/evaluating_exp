@@ -13,10 +13,10 @@ SESSION_CONFIGS = [
         # 4. Survey questions about  psychological attitudes
         # 5. Demographics, which also includes the payment app
         app_sequence=[
-            # 'first_order',
-            # 'second_order_seq',
-            # 'reasoning',
-            # 'attitudes',
+            'first_order',
+            'second_order_seq',
+            'reasoning',
+            'attitudes',
             'demographics'
         ],
         # anything here can be changed when setting up the session, these are defaults
